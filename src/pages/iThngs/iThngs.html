@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>iThngs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(data)">
+      {{ data.geolocationlatitude }}
+    </button>
+  </ion-list>
+  
+ 
+</ion-content>

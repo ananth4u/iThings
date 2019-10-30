@@ -1,0 +1,7 @@
+{
+  "name": "iThngs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

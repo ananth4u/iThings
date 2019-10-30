@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Add Thngs
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+     <!--   <ion-item >
+            <ion-label color="placeholder">No images for this Product</ion-label> 
+                      <button padding color="secondary" ion-button outline item-end icon-start>
+              <ion-icon name="ios-image-outline"></ion-icon>
+              setup images
+            </button>
+          </ion-item>-->
+    <ion-item>
+        <ion-label floating>Product Name</ion-label>
+        <ion-input type="text" [(ngModel)]="qrData"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label floating>Description</ion-label>
+          <ion-input type="text" [(ngModel)]="qrData1"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label floating>Brand</ion-label>
+            <ion-input type="text" [(ngModel)]="qrData2"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+              <ion-label floating>Purchase Date</ion-label>
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="qrData3"></ion-datetime>
+            </ion-item>
+  
+            <ion-item>
+                <ion-label floating>Product Image URL</ion-label>
+                <ion-input type="text" [(ngModel)]="qrData4"></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                  <ion-label floating>Categories</ion-label>
+                  <ion-input type="text" [(ngModel)]="qrData5"></ion-input>
+                </ion-item>
+  
+               <!-- <ion-item>
+                    <ion-label floating>Capacity</ion-label>
+                    <ion-input type="text" [(ngModel)]="qrData6"></ion-input>
+                  </ion-item>           -->   
+    
+    </ion-list>
+  <!-- Colors -->
+<ion-fab bottom right padding>
+    <button ion-fab color="primary" (click)="openModal()"><ion-icon name="md-done-all"></ion-icon></button>
+  </ion-fab>
+   

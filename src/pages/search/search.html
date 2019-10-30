@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color= "primary">
+      <ion-buttons right>
+              <button ion-button icon-only (click)="scanCode()">
+          <ion-icon name="md-qr-scanner"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-searchbar left></ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+          Search by Category
+        </ion-card-header>
+      
+        <ion-list>
+          <button ion-item>
+            <ion-icon name="cart" item-start></ion-icon>
+            Shopping
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="medical" item-start></ion-icon>
+            Hospital
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="cafe" item-start></ion-icon>
+            Cafe
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="paw" item-start></ion-icon>
+            Dog Park
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="beer" item-start></ion-icon>
+            Pub
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="planet" item-start></ion-icon>
+            Space
+          </button>
+      
+        </ion-list>
+      </ion-card>
+      <ion-card *ngIf="scannedCode">
+        <ion-card-content>
+          Result from Scan: {{ scannedCode }}
+        </ion-card-content>
+      </ion-card>
+</ion-content>
